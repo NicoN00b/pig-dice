@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pig Dice</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <div class="col-md-12">
+          <h1>This Little Piggy</h1>
+        </div>
+        <br>
+        <br>
+      </div>
+      <div class="row">
+
+        <form class="blank" action="index.html" method="post">
+          <div class="col-md-6">
+            <label for="Player1">Who is Player 1</label>
+            <input type="text" class="form-control" id="newPlayer1">
+          </div>
+          <div class="col-md-6">
+            <label for="Player2">Who is Player 2</label>
+            <input type="text" class="form-control" id="newPlayer2">
+            <br>
+          <div class="col-md-6">
+            <button type="submit" class="btn">Set Players!</button>
+          </div>
+        </form>
+      </div>
+      <br>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-md-6">
+          <div id="show-player1">
+          <p>Player 1: <span class="Player1"></span></p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="show-player2">
+          <p>Player 2: <span class="Player2"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
