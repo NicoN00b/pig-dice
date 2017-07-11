@@ -1,7 +1,32 @@
 #show-player1 {
   display: hide;
+  padding-left: 12px;
 }
 
 #show-player2 {
   display: hide;
+  padding-left: 12px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.game {
+    margin-left: 50%;
+    margin-right: 50%;
+    object-position: center;
+}
+
+.btn {
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+.container {
+  height: 300px;
+  width: 70%;
+  background: #eee;
+  margin: 10px auto;
+  position: relative;
 }
