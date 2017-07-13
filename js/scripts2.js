@@ -1,13 +1,15 @@
 //back-end logic
 var currentScore = 0;
 
-function Player(name, turn, roll, score) {
+function Player(name, turn, roll, score, identifier) {
   this.name = name;
   this.turn = turn;
   this.roll = roll;
   this.score = score;
+  this.identifier = identifier;
 }
-
+//TO DO: change roll to player prototype
+//TO DO: make it so that we change turns...
 function roll() {
   var randomRoll = function(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min);
@@ -40,12 +42,15 @@ function roll() {
 //   this.turnScore += 0;
 //   return "Womp Womp Womp";
 // }
-
+//MAKE GAME AN OBJECT< EACH PLAYER IS AN ASPECT OF THAT OBJECT
 //front-end logic
 
 $(document).ready(function() {
   $(".blank").submit(function(event) {
       event.preventDefault();
+      var player1 = new Player($("input#newPlayer1").val(),true,0,"player-one-score");
+      var player1 = new Player($("input#newPlayer1").val(),true,0,"player-one-score");
+
       var input1 = $("input#newPlayer1").val();
       var input2= $("input#newPlayer2").val();
       $("#show-player1").show();
